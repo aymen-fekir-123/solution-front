@@ -1,0 +1,398 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Open+Sans:wght@300;700&family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@400;500;600;700&family=Raleway:wght@400;700&family=Red+Hat+Display:wght@300;500;700;900&family=Rubik:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Open+Sans:wght@300&family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@400;500;600;700&family=Raleway:wght@400;700&family=Red+Hat+Display:wght@300;500;700;900&family=Rubik:wght@400;500;700&display=swap');
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+footer,
+section,
+.comunite {
+    font-family: 'Open Sans', sans-serif;
+}
+
+:root {
+    
+    --Light-Pink: hsl(321, 100%, 78%);
+    --Light-Red: hsl(0, 100%, 63%);
+    --Grayish-Blue: hsl(208, 11%, 55%);
+    --Very-Pale-Cyan: #F6FBFF;
+    --Very-Dark-Cyan: hsl(192, 100%, 9%);
+    --Pink: hsl(322, 100%, 66%);
+}
+
+
+header,
+header .logo,
+header .title,
+section{
+    display: flex;
+    width: 100%;
+}
+
+header {
+    font-family: 'Poppins', sans-serif;
+    padding: 50px;
+    flex-direction: column;
+
+}
+
+header .logo {
+    justify-content: space-between;
+}
+
+header .title {
+    flex-direction: column;
+}
+
+.logo {
+    align-items: center;
+}
+
+
+.logo img{
+    width: 150px;
+}
+
+.disc {
+    width: 60%;
+    text-align: center;
+    align-self: center;
+    margin: 50px 0px;
+}
+
+
+.disc p {
+    font-size: 14px;
+    margin: 50px 0px;
+}
+
+.web {
+    width: 60%;
+    align-self: center;
+} 
+
+.web img {
+    width: 100%;
+}
+
+.sub {
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+    align-self: center;
+}
+
+.sub img {
+    width: 30px;
+}
+
+.sub h2 {
+    font-size: 50px;
+}
+
+.sub span {
+    opacity: 0.8;
+}
+
+a {
+    text-decoration: none;
+    padding: 15px;
+    border-top-left-radius: 25px  25px;
+    border-bottom-left-radius: 25px 25px;
+    border-top-right-radius: 25px  25px;
+    border-bottom-right-radius: 25px 25px;
+    font-weight: 600;
+    font-size: 12px;
+    box-shadow: 0px 2px 5px 3px var(--Grayish-Blue);
+
+}
+
+.logo a {
+    color: var(--Light-Pink);
+    width: 150px;
+    text-align: center;
+    border: 2px solid var(--Light-Pink);
+}
+
+.disc a,
+.comunite a {
+    color: #fff;
+    width: 200px;
+    background-color: var(--Pink);
+    padding: 15px 50px;
+    
+}
+
+section {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.card {
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 40% 40%;
+    padding: 100px 50px;
+    justify-content: center;
+    align-items: center;   
+}
+
+.card:nth-child(2n+1) {
+    background-color: var(--Very-Pale-Cyan);
+}
+
+.top {
+    transform: translateY(20px);
+}
+
+.topm,
+.bottomm,
+.footerm {
+    display: none;
+}
+.top svg,
+.bottom svg,
+.footer svg{
+    width: 100%;
+}
+
+.footer {
+    transform: translateY(40px);
+}
+
+
+.card img {
+    width: 60%;
+
+}
+
+.speek h3 {
+    font-weight: 700;
+    margin-bottom: 10px;
+
+}
+
+.speek p{
+    font-size: 13px;
+    font-weight: 600;
+    opacity: 0.5;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 60% 30%;
+    justify-content: space-evenly;
+    width: 100%;
+    background-color: var(--Very-Dark-Cyan);
+    margin-top: 30px;
+    padding: 100px 50px 30px;
+    font-size: 13px;
+    color: #fff;
+}
+
+footer .logo {
+    margin-bottom: 30px;
+}
+
+footer .adress {
+    width: calc(100% / 3);
+    margin-bottom: 20px;
+}
+
+.sociel-media svg{
+    width: 20px;
+    fill: #fff;
+    transition: fill 0.5s;
+    
+}
+
+.sociel-media {
+    display: flex;
+}
+
+.sociel-media div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+
+
+.icon {
+    display: flex;
+    margin-bottom: 20px;
+}
+ 
+.icon img {
+    height: 20px;
+    margin-right: 20px;
+} 
+
+
+
+
+.comunite {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    width: 100%;
+    
+}
+
+.comunite h3 {
+    margin-bottom: 20px;
+}
+
+.comunite a {
+    text-align: center;
+    width: 20%;
+}
+
+.comunite a,
+.disc a,
+.logo a {
+    transition: opacity 0.5s;
+}
+
+.comunite:hover a,
+.disc:hover a,
+.logo:hover a  {
+    opacity: 0.8;
+}
+
+
+.sociel-media svg:hover {
+    cursor: pointer;
+    fill: var(--Pink);
+}
+
+form input {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+form input[type=submit] {
+    background-color: var(--Pink);
+    color: #fff;
+    font-weight: 400;
+    margin-left: 15px;
+}
+
+.tow  p{
+    margin: 25px 0px;
+}
+
+@media (max-width:375px) {
+    .title{
+        flex-direction: column;
+    }
+
+    .disc,
+    .web,
+    .card,
+    .comunite {
+        width: 100%;
+    }
+
+
+
+    .logo img,
+    .logo a {
+        width: 100px;
+    }
+
+    .disc a,
+    .card img {
+        width: 100%;
+    }
+
+    .card {
+        display: grid;
+        row-gap: 20px;
+    }
+    
+    .card .image {
+        order: -1;
+        
+    }
+
+    .card .speek {
+        text-align: center;
+    }
+    
+
+    .comunite a {
+        width: 90%;
+    }
+
+
+    footer .adress, 
+    footer .sociel-media {
+        width: 100%;
+    }
+
+   
+
+    .sociel-media {
+        justify-content: center;
+    }
+
+    .top, 
+    .bottom,
+    .footer {
+        display: none;
+    } 
+
+    .topm,
+    .bottomm,
+    .footerm {
+        display: initial;
+    }
+
+    .topm {
+        transform: translateY(10px);
+    }
+    
+    .footerm {
+        position: absolute;
+        transform: translateY(-10px);
+    }
+    
+    footer {
+        grid-template-columns: 100%;
+        justify-content: center;
+        row-gap: 20px;
+    }
+
+    .sub {
+        display: grid;
+        row-gap: 20px;
+    }
+
+    .card {
+        grid-template-columns: 100%;
+        grid-template-rows: 45% 45%;
+
+    }
+
+    input[type=submit] {
+        position: absolute;
+    }
+
+
+
+
+}
